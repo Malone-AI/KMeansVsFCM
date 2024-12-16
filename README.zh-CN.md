@@ -1,0 +1,3 @@
+在Iris数据集上进行实验，比较Kmeans和FCM算法性能，并在cifar10数据集上进行图像分割任务，比较KMeans和FCM算法在该任务上的性能。
+KMeans.ipynb和FCM.ipynb是在Iris数据集上进行实验的代码及执行结果。segment.ipynb在cifar10数据集上利用这两个算法进行图像分割的代码及运行结果。其中cifar10数据集请在链接 https://www.cs.toronto.edu/~kriz/cifar.html 中下载，并直接解压在当前目录即可。图片score.jpeg是从网上找的无监督聚类评价指标，但是本实验主要使用轮廓系数作为评价指标。图片1.png~4.png是轮廓系数的计算公式。
+Python脚本文件UI.py是我使用tkinter做的可视化界面，实现图片导入，然后同时展示KMeans和FCM进行图像分割的结果，并且可以动态地调整K值或者C值。目前还有一点bug，不过未对其进行修改。image下的图片是我随便找的几个测试用例
